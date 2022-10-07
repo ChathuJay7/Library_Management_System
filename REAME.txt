@@ -1,0 +1,6 @@
+Librarian is the super user. Only librarian added to the system. Other user roles(Member, Admin, Assist Librarian, Inspector), books, events and store able to add through Librarian.
+
+Librarian Login Details
+
+Username = "librarian@gmail.com"
+Password = "Librarian123"

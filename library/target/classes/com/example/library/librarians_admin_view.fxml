@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.LibrariansAdminController">
+   <children>
+      <AnchorPane id="text_area" layoutX="-1.0" layoutY="1.0" prefHeight="600.0" prefWidth="286.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <AnchorPane id="header" layoutX="1.0" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <Label id="topic" layoutX="361.0" layoutY="14.0" text="Admins" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="adminTable" layoutX="301.0" layoutY="188.0" prefHeight="404.0" prefWidth="589.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="132.0" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="227.0" text="Email" />
+            <TableColumn fx:id="colNic" prefWidth="154.0" text="NIC" />
+         </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </TableView>
+      <Button fx:id="btnHome" layoutX="17.0" layoutY="562.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="25.0" prefWidth="250.0" text="&lt;- Dashboard">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="clearBtn" layoutX="17.0" layoutY="526.0" mnemonicParsing="false" onAction="#ClearClick" prefHeight="25.0" prefWidth="250.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="deleteBtn" layoutX="17.0" layoutY="490.0" mnemonicParsing="false" onAction="#DeleteClick" prefHeight="25.0" prefWidth="250.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="changeToAMemberBtn" layoutX="17.0" layoutY="417.0" mnemonicParsing="false" onAction="#ChangeToAMemberClick" prefHeight="25.0" prefWidth="250.0" text="Change As Member">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="txtAdminNic" alignment="CENTER" disable="true" layoutX="17.0" layoutY="366.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="txtAdminName" alignment="CENTER" disable="true" layoutX="17.0" layoutY="242.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="txtAdminEmail" alignment="CENTER" disable="true" layoutX="17.0" layoutY="305.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="txtAdminID" alignment="CENTER" disable="true" layoutX="17.0" layoutY="180.0" prefHeight="25.0" prefWidth="250.0" />
+      <Label layoutX="17.0" layoutY="159.0" prefHeight="21.0" prefWidth="250.0" text="Admin ID :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="221.0" prefHeight="21.0" prefWidth="250.0" text="Admin Name :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="285.0" prefHeight="21.0" prefWidth="250.0" text="Admin Email :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="345.0" prefHeight="21.0" prefWidth="250.0" text="Admin NIC :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="addBtn" layoutX="711.0" layoutY="116.0" mnemonicParsing="false" onAction="#AddClick" prefHeight="25.0" prefWidth="175.0" text="+ Add New Admin">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField id="search" fx:id="txtSearch" layoutX="301.0" layoutY="149.0" prefHeight="25.0" prefWidth="589.0" promptText="Enter Admin's Name or Email to search" />
+      <Label id="email" fx:id="librarianAdminEmail" layoutX="17.0" layoutY="14.0" prefHeight="21.0" prefWidth="460.0" textFill="#005ba1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="changeToAssistLibrarianBtn" layoutX="17.0" layoutY="453.0" mnemonicParsing="false" onAction="#ChangeToAssistLibrarianClick" prefHeight="25.0" prefWidth="250.0" text="Change As Assist Librarian">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button id="logout_button" fx:id="btnLogout" layoutX="746.0" layoutY="22.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="25.0" prefWidth="150.0" text="LogOut" textFill="#da0f0f" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="680.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/add-member.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="57.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+   <stylesheets>
+      <URL value="@../../../Style/main.css" />
+      <URL value="@../../../Style/table.css" />
+   </stylesheets>
+</AnchorPane>

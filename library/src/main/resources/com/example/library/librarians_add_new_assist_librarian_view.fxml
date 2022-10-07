@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.LibrariansAddNewAssistLibrarianController">
+   <children>
+      <AnchorPane id="text_area" layoutX="80.0" layoutY="121.0" prefHeight="460.0" prefWidth="600.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect></AnchorPane>
+      <AnchorPane id="header" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <Label id="header" layoutX="115.0" layoutY="26.0" prefHeight="73.0" prefWidth="670.0" text="Add New Assistant Librarian" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="223.0" prefHeight="30.0" prefWidth="308.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="303.0" prefHeight="30.0" prefWidth="308.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" alignment="CENTER" layoutX="317.0" layoutY="253.0" prefHeight="30.0" prefWidth="308.0" promptText="Enter Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="317.0" layoutY="333.0" prefHeight="30.0" prefWidth="308.0" promptText="Enter Email Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAdd" layoutX="325.0" layoutY="492.0" mnemonicParsing="false" onAction="#AddAssistLibrarianClick" prefHeight="30.0" prefWidth="250.0" text="Add Librarian">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnAssistLibrarian" layoutX="325.0" layoutY="533.0" mnemonicParsing="false" onAction="#AssistLibrarianClick" prefHeight="30.0" prefWidth="250.0" text="&lt;- Assist Librarians">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label id="message" fx:id="txtMessage" alignment="CENTER" layoutX="247.0" layoutY="146.0" prefHeight="30.0" prefWidth="400.0" textAlignment="CENTER" textFill="#0573ae">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label id="email" fx:id="librarianAddNewAssistLibrarianEmail" layoutX="36.0" layoutY="33.0" prefHeight="21.0" prefWidth="376.0" textFill="#005ba1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="382.0" prefHeight="30.0" prefWidth="308.0" text="NIC :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNic" alignment="CENTER" layoutX="317.0" layoutY="412.0" prefHeight="30.0" prefWidth="308.0" promptText="Enter National Identity Card Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button id="logout_button" fx:id="btnLogout" layoutX="746.0" layoutY="22.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="25.0" prefWidth="150.0" text="LogOut" textFill="#da0f0f" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <AnchorPane layoutX="247.0" layoutY="471.0" prefHeight="1.25" prefWidth="400.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="247.0" layoutY="199.0" prefHeight="1.25" prefWidth="400.0" style="-fx-background-color: #757474;" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="277.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/name.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="277.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="277.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/nic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="57.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

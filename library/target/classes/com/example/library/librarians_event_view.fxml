@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.LibrariansEventController">
+   <children>
+      <AnchorPane id="text_area" layoutX="-2.0" prefHeight="600.0" prefWidth="286.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <AnchorPane id="header" layoutX="1.0" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <Label id="topic" layoutX="374.0" layoutY="14.0" text="Events" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="eventTable" layoutX="299.0" layoutY="156.0" prefHeight="433.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="eventIDColumn" prefWidth="78.0" text="Event ID" />
+          <TableColumn fx:id="eventNameColumn" prefWidth="244.0" text="Event Name" />
+            <TableColumn fx:id="eventDateColumn" prefWidth="141.0" text="Event Date" />
+            <TableColumn fx:id="eventTimeColumn" prefWidth="128.0" text="Event Time" />
+        </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </TableView>
+      <Label layoutX="17.0" layoutY="136.0" prefHeight="21.0" prefWidth="250.0" text="Event ID :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEventID" alignment="CENTER" disable="true" layoutX="17.0" layoutY="156.0" prefHeight="25.0" prefWidth="250.0" />
+      <Label layoutX="15.0" layoutY="208.0" prefHeight="21.0" prefWidth="250.0" text="Event Name :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEventName" alignment="CENTER" layoutX="16.0" layoutY="228.0" prefHeight="25.0" prefWidth="250.0" />
+      <Label layoutX="17.0" layoutY="275.0" prefHeight="21.0" prefWidth="250.0" text="Event Date :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="340.0" prefHeight="21.0" prefWidth="250.0" text="Event Time :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEventTime" alignment="CENTER" layoutX="18.0" layoutY="361.0" prefHeight="25.0" prefWidth="250.0" />
+      <Button fx:id="btnHome" layoutX="15.0" layoutY="562.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="25.0" prefWidth="250.0" text="&lt;-Dashboard">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="15.0" layoutY="451.0" mnemonicParsing="false" onAction="#UpdateClick" prefHeight="25.0" prefWidth="250.0" text="Update Event">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="15.0" layoutY="488.0" mnemonicParsing="false" onAction="#DeleteClick" prefHeight="25.0" prefWidth="250.0" text="Delete Event">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="addBtn" layoutX="15.0" layoutY="414.0" mnemonicParsing="false" onAction="#AddClick" prefHeight="25.0" prefWidth="250.0" text="Add Event">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnClear" layoutX="15.0" layoutY="525.0" mnemonicParsing="false" onAction="#ClearClick" prefHeight="25.0" prefWidth="250.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <DatePicker fx:id="txtEventDate" layoutX="15.0" layoutY="296.0" prefHeight="25.0" prefWidth="250.0" showWeekNumbers="true" />
+      <TextField id="search" fx:id="txtSearch" layoutX="299.0" layoutY="118.0" prefHeight="25.0" prefWidth="592.0" promptText="Enter Event Name to search" />
+      <Label id="email" fx:id="librarianEventEmail" layoutX="31.0" layoutY="14.0" prefHeight="21.0" prefWidth="460.0" textFill="#005ba1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button id="logout_button" fx:id="btnLogout" layoutX="746.0" layoutY="22.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="25.0" prefWidth="150.0" text="LogOut" textFill="#da0f0f" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="57.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+   <stylesheets>
+      <URL value="@../../../Style/main.css" />
+      <URL value="@../../../Style/table.css" />
+   </stylesheets>
+</AnchorPane>

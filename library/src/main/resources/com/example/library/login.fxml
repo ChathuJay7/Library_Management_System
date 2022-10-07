@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.LoginController">
+   <children>
+      <AnchorPane id="header" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <AnchorPane id="text_area" layoutX="326.0" layoutY="120.0" prefHeight="460.0" prefWidth="600.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="468.0" prefHeight="2.0" prefWidth="400.0" style="-fx-background-color: #757474;" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+      <Label layoutX="314.0" layoutY="200.0" prefHeight="30.0" prefWidth="311.0" text="User Name :" textFill="#00217c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="username" alignment="CENTER" layoutX="275.0" layoutY="233.0" prefHeight="30.0" prefWidth="350.0" promptText="Enter Your Email">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <Label layoutX="314.0" layoutY="287.0" prefHeight="30.0" prefWidth="311.0" text="Password :" textFill="#00217c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label id="message" fx:id="msgLabel" alignment="CENTER" layoutX="197.0" layoutY="138.0" prefHeight="30.0" prefWidth="500.0" textAlignment="CENTER" textFill="#f22613">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Button id="login" fx:id="loginBtn" layoutX="326.0" layoutY="374.0" mnemonicParsing="false" onAction="#loginClicked" prefHeight="30.0" prefWidth="250.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="cancelBtn" layoutX="325.0" layoutY="416.0" mnemonicParsing="false" onAction="#cancelClicked" prefHeight="30.0" prefWidth="250.0" text="&lt;- Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="384.0" layoutY="20.0" text="Login" textFill="#00217c" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="275.0" layoutY="321.0" prefHeight="30.0" prefWidth="350.0" promptText="Enter Your Password" AnchorPane.leftAnchor="275.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnForget" layoutX="326.0" layoutY="533.0" mnemonicParsing="false" onAction="#forgetClicked" prefHeight="30.0" prefWidth="250.0" text="Forget Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Label alignment="CENTER" layoutX="262.0" layoutY="492.0" prefHeight="30.0" prefWidth="377.0" text="If you forget password click below" textFill="#00217c">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="200.0" layoutY="186.0" prefHeight="2.0" prefWidth="400.0" style="-fx-background-color: #757474;" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="275.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/username.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="275.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,23 @@
+
+
+#buttoncontainer{
+-fx-background-color: white;
+-fx-opacity: 0.5;
+
+}
+
+.button{
+-fx-background-color: #021b36;
+-fx-text-fill: #cfd0d1;
+}
+
+.button:hover{
+-fx-background-color: #cfd0d1;
+-fx-text-fill: #021b36;
+}
+
+#creatorImg {
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+
+}

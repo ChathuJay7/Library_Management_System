@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.AssistLibrariansLibrarianController">
+   <children>
+      <AnchorPane id="header" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <Label id="topic" layoutX="346.0" layoutY="19.0" text="Librarian" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableLibrarian" layoutX="118.0" layoutY="126.0" prefHeight="403.0" prefWidth="780.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="94.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="198.0" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="298.0" text="Email" />
+            <TableColumn fx:id="colNic" prefWidth="189.0" text="NIC" />
+         </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </TableView>
+      <Button fx:id="btnHome" layoutX="325.0" layoutY="549.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="30.0" prefWidth="250.0" text="&lt;- Dashboard">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label id="email" fx:id="assistLibrarianLibrarianEmail" layoutX="104.0" layoutY="34.0" prefHeight="21.0" prefWidth="385.0" textFill="#005ba1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button id="logout_button" fx:id="btnLogout" layoutX="756.0" layoutY="32.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="25.0" prefWidth="150.0" text="LogOut" textFill="#da0f0f" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="57.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+   <stylesheets>
+      <URL value="@../../../Style/main.css" />
+      <URL value="@../../../Style/table.css" />
+   </stylesheets>
+</AnchorPane>

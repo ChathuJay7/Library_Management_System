@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../Style/lankding_page.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.LandingPageController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/landing_page.jpg" />
+         </image>
+      </ImageView>
+      <HBox id="buttoncontainer" layoutX="595.0" layoutY="25.0" prefHeight="250.0" prefWidth="288.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect></HBox>
+      <Button fx:id="btnLogin" layoutX="665.0" layoutY="34.0" mnemonicParsing="false" onAction="#loginClick" prefHeight="40.0" prefWidth="200.0" text="Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnRegister" layoutX="665.0" layoutY="94.0" mnemonicParsing="false" onAction="#RegisterClick" prefHeight="40.0" prefWidth="200.0" text="Register">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnAbouUs" layoutX="665.0" layoutY="157.0" mnemonicParsing="false" onAction="#ClickAboutUs" prefHeight="40.0" prefWidth="200.0" text="About Us">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnExit" layoutX="665.0" layoutY="217.0" mnemonicParsing="false" onAction="#ExitClick" prefHeight="40.0" prefWidth="200.0" text="Exit">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="607.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="607.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/register.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="607.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/about_us.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="607.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/exit.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

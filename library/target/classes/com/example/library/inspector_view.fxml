@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.InspectorViewController">
+   <children>
+      <AnchorPane id="text_area" layoutX="25.0" layoutY="120.0" prefHeight="458.0" prefWidth="850.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane id="header" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <Label id="topic" layoutX="205.0" layoutY="36.0" text="Inspector Dashboard" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="membersBtn" cache="true" layoutX="61.0" layoutY="173.0" mnemonicParsing="false" onAction="#MembersClick" prefHeight="150.0" prefWidth="150.0" text="Members">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="adminsBtn" layoutX="272.0" layoutY="172.0" mnemonicParsing="false" onAction="#AdminsClick" prefHeight="150.0" prefWidth="150.0" text="Admins">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="bookBtn" layoutX="170.0" layoutY="382.0" mnemonicParsing="false" onAction="#BooksClick" prefHeight="150.0" prefWidth="150.0" text="Books">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="eventsBtn" layoutX="378.0" layoutY="382.0" mnemonicParsing="false" onAction="#EventsClick" prefHeight="150.0" prefWidth="150.0" text="Events">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="updateBtn" layoutX="587.0" layoutY="382.0" mnemonicParsing="false" onAction="#UpdateClick" prefHeight="150.0" prefWidth="150.0" text="Update Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Label id="email" fx:id="inspectorDashboardEmail" layoutX="24.0" layoutY="24.0" prefHeight="21.0" prefWidth="350.0" textFill="#005ba1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button id="logout_button" fx:id="btnLogout" layoutX="746.0" layoutY="22.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="25.0" prefWidth="150.0" text="LogOut" textFill="#da0f0f" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="assistLibrarianBtn" layoutX="689.0" layoutY="173.0" mnemonicParsing="false" onAction="#AssistLibrarianClick" prefHeight="150.0" prefWidth="150.0" text="Assist Librarian">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="librarianBtn" layoutX="479.0" layoutY="173.0" mnemonicParsing="false" onAction="#LibrarianClick" prefHeight="150.0" prefWidth="150.0" text="Librarian">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="57.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

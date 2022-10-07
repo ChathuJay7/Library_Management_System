@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.RegisterController">
+   <children>
+      <AnchorPane id="text_area" layoutX="50.0" layoutY="112.0" prefHeight="474.0" prefWidth="800.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane id="header" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <AnchorPane layoutX="449.0" layoutY="170.0" prefHeight="200.0" prefWidth="2.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="93.0" layoutY="381.0" prefHeight="2.0" prefWidth="716.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="92.0" layoutY="494.0" prefHeight="2.0" prefWidth="716.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="92.0" layoutY="154.0" prefHeight="2.0" prefWidth="716.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="450.0" layoutY="434.0" prefHeight="50.0" prefWidth="2.0" style="-fx-background-color: #757474;" />
+      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="133.0" layoutY="162.0" prefHeight="30.0" prefWidth="260.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="547.0" layoutY="162.0" prefHeight="30.0" prefWidth="260.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="547.0" layoutY="236.0" prefHeight="30.0" prefWidth="260.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <TextField fx:id="txtName" layoutX="133.0" layoutY="192.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter Your First Name">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="txtEmail" layoutX="547.0" layoutY="192.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter Your Email">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="547.0" layoutY="309.0" prefHeight="30.0" prefWidth="260.0" text="Confirm Password :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Label id="message" fx:id="txtMessage" alignment="CENTER" layoutX="225.0" layoutY="118.0" prefHeight="30.0" prefWidth="450.0" textAlignment="CENTER" textFill="#00519e">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Label fx:id="lblPasswordConfirm" layoutX="711.0" layoutY="317.0" prefHeight="17.0" prefWidth="138.0" textFill="#fc1500">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label id="topic" layoutX="353.0" layoutY="18.0" text="Register" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegister" layoutX="325.0" layoutY="508.0" mnemonicParsing="false" onAction="#registerClicked" prefHeight="30.0" prefWidth="250.0" text="Register">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="325.0" layoutY="548.0" mnemonicParsing="false" onAction="#cancelClicked" prefHeight="30.0" prefWidth="250.0" text="&lt;- Home">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <PasswordField fx:id="txtPassword" layoutX="547.0" layoutY="266.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter Your Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="txtConfirmPassword" layoutX="547.0" layoutY="339.0" prefHeight="30.0" prefWidth="260.0" promptText="Confirm Your Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label id="securityQuestionsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="261.0" layoutY="390.0" prefHeight="30.0" prefWidth="378.0" text="Security Questions">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="421.0" prefHeight="30.0" prefWidth="260.0" text="Favourite Year Of Your Life :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="547.0" layoutY="421.0" prefHeight="30.0" prefWidth="260.0" text="Your Mothers Last Name :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSecurity1" layoutX="133.0" layoutY="451.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter Favourite Year Of Your Life">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSecurity2" layoutX="547.0" layoutY="451.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter Your Mother's Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="133.0" layoutY="236.0" prefHeight="30.0" prefWidth="260.0" text="NIC :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNic" layoutX="133.0" layoutY="266.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter Your nic">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="132.0" layoutY="309.0" prefHeight="30.0" prefWidth="260.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="132.0" layoutY="339.0" prefHeight="30.0" prefWidth="260.0" promptText="Enter Your Contact Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="92.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/name.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="92.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/nic.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="92.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/contact.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="92.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/security1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="507.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="507.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/password1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="507.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/confirm_password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="507.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/security2.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

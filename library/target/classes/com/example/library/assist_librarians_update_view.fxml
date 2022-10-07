@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../Style/main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.AssistLibrariansUpdateController">
+   <children>
+      <AnchorPane id="header" layoutX="1.0" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <AnchorPane id="text_area" layoutX="80.0" layoutY="113.0" prefHeight="470.0" prefWidth="800.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect></AnchorPane>
+      <AnchorPane layoutX="449.0" layoutY="178.0" prefHeight="129.0" prefWidth="2.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="92.0" layoutY="321.0" prefHeight="2.0" prefWidth="716.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="90.0" layoutY="452.0" prefHeight="2.0" prefWidth="716.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="92.0" layoutY="158.0" prefHeight="2.0" prefWidth="716.0" style="-fx-background-color: #757474;" />
+      <AnchorPane layoutX="448.0" layoutY="374.0" prefHeight="65.0" prefWidth="2.0" style="-fx-background-color: #757474;" />
+      <Label id="topic" layoutX="275.0" layoutY="26.0" prefHeight="73.0" prefWidth="350.0" text="Update Details" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="175.0" prefHeight="26.0" prefWidth="266.0" text="ID :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="173.0" prefHeight="27.0" prefWidth="266.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="250.0" prefHeight="27.0" prefWidth="266.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" disable="true" layoutX="141.0" layoutY="199.0" prefHeight="30.0" prefWidth="266.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtName" layoutX="533.0" layoutY="195.0" prefHeight="30.0" prefWidth="266.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtEmail" disable="true" layoutX="141.0" layoutY="276.0" prefHeight="30.0" prefWidth="266.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="btnUpdate" layoutX="327.0" layoutY="465.0" mnemonicParsing="false" onAction="#UpdateClick" prefHeight="30.0" prefWidth="250.0" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnHome" layoutX="327.0" layoutY="541.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="25.0" prefWidth="250.0" text="&lt;- Dashboard">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label id="email" fx:id="assistLibrarianUpdateDetailsEmail" layoutX="14.0" layoutY="14.0" prefHeight="21.0" prefWidth="400.0" textFill="#005ba1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="250.0" prefHeight="28.0" prefWidth="266.0" text="User Role :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserRole" layoutX="533.0" layoutY="273.0" prefHeight="30.0" prefWidth="266.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label id="message" fx:id="txtMessage" alignment="CENTER" layoutX="200.0" layoutY="126.0" prefHeight="21.0" prefWidth="500.0" textFill="#003479">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label id="securityQuestionsLabel" layoutX="365.0" layoutY="331.0" text="Security Questions">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="141.0" layoutY="387.0" prefHeight="27.0" prefWidth="266.0" text="Favourite Year Of Your Life :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSecurityQuestion1" layoutX="141.0" layoutY="413.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label layoutX="533.0" layoutY="385.0" prefHeight="27.0" prefWidth="266.0" text="Your Mother's Last Name :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSecurityQuestion2" layoutX="534.0" layoutY="414.0" prefHeight="25.0" prefWidth="266.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button fx:id="btnChangePassword" layoutX="327.0" layoutY="503.0" mnemonicParsing="false" onAction="#ChangePasswordClick" prefHeight="25.0" prefWidth="250.0" text="Change Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button id="logout_button" fx:id="btnLogout" layoutX="756.0" layoutY="32.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="25.0" prefWidth="150.0" text="LogOut" textFill="#da0f0f" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="107.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/id.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="105.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/email.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="499.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/name.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="499.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/user_role.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="105.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/security1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="499.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/security2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="57.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.AboutUsController">
+   <children>
+      <AnchorPane id="header" layoutX="1.0" layoutY="-1.0" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane id="text_area" layoutX="25.0" layoutY="120.0" prefHeight="458.0" prefWidth="851.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <children>
+            <ImageView id="creatorImg" fitHeight="200.0" fitWidth="204.0" layoutX="30.0" layoutY="63.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/creator.jpeg" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <VBox layoutX="253.0" layoutY="131.0" prefHeight="109.0" prefWidth="575.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="590.0" text="I am a Computer Science undergraduate in Uva Wellassa University">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="19.0" prefWidth="590.0" text="of Sri Lanka.  Passionate about Full-Stack development, Back-End ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="579.0" text="development &amp; Database Management. I have good experience ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="19.0" prefWidth="590.0" text="in developing web based software platforms with API backends.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label layoutX="253.0" layoutY="62.0" prefHeight="38.0" prefWidth="437.0" text="Hi , I'm Chathura Jeewantha">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="253.0" layoutY="281.0" prefHeight="126.0" prefWidth="526.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="645.0" text="This is a fully completed Library Management System.">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="654.0" text="User Roles : Member, Admin, Librarian, Assisstant Librarian, Inspector">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="399.0" text="Technologies used">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="399.0" text="Frontend ; JavaFx, Scene Builder, Bootstrap, Css" />
+                  <Label prefHeight="17.0" prefWidth="400.0" text="Backend ; Java, Hibernate" />
+                  <Label prefHeight="17.0" prefWidth="398.0" text="Database : Mysql database" />
+               </children>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="290.0" prefHeight="17.0" prefWidth="176.0" text="C.J.M.H Bandara" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="314.0" prefHeight="17.0" prefWidth="176.0" text="chathurajmhb7@gmail.com" />
+            <AnchorPane layoutX="230.0" layoutY="56.0" prefHeight="357.0" prefWidth="2.0" style="-fx-background-color: #757474;" />
+            <AnchorPane layoutX="251.0" layoutY="117.0" prefHeight="2.0" prefWidth="575.0" style="-fx-background-color: #757474;" />
+            <AnchorPane layoutX="251.0" layoutY="262.0" prefHeight="2.0" prefWidth="575.0" style="-fx-background-color: #757474;" />
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <HBox id="buttoncontainer" layoutX="642.0" layoutY="28.0" prefHeight="40.0" prefWidth="244.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="28.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="652.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnHome" layoutX="696.0" layoutY="33.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="30.0" prefWidth="180.0" text="Home">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="40.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+      <Label id="topic" layoutX="313.0" layoutY="9.0" text="About Us">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../../../Style/lankding_page.css" />
+      <URL value="@../../../Style/main.css" />
+   </stylesheets>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

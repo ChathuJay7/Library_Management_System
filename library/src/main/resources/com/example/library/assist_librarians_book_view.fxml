@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library.AssistLibrariansBookController">
+   <children>
+      <AnchorPane id="text_area" layoutY="4.0" prefHeight="600.0" prefWidth="286.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <AnchorPane id="header" prefHeight="100.0" prefWidth="900.0">
+         <effect>
+            <InnerShadow />
+         </effect></AnchorPane>
+      <Label layoutX="378.0" layoutY="28.0" text="Books" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bookTable" layoutX="303.0" layoutY="179.0" prefHeight="409.0" prefWidth="586.0">
+         <columns>
+            <TableColumn fx:id="bookIDColumn" prefWidth="61.0" text="Book ID" />
+            <TableColumn fx:id="bookNameColumn" prefWidth="227.0" text="Book Name" />
+            <TableColumn fx:id="isAvailableColumn" minWidth="9.0" prefWidth="116.0" text="Is Available" />
+            <TableColumn fx:id="memberIdColumn" prefWidth="85.0" text="Member ID" />
+            <TableColumn fx:id="dateColumn" prefWidth="96.0" text="Picked Date" />
+         </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color></DropShadow>
+         </effect>
+      </TableView>
+      <Button fx:id="btnHome" layoutX="18.0" layoutY="566.0" mnemonicParsing="false" onAction="#HomeClick" prefHeight="25.0" prefWidth="250.0" text="&lt;- Dashboard">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="18.0" layoutY="132.0" prefHeight="21.0" prefWidth="250.0" text="Book ID :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="191.0" prefHeight="21.0" prefWidth="250.0" text="Book Name :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="249.0" prefHeight="21.0" prefWidth="250.0" text="Is Book Available :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookID" alignment="CENTER" disable="true" layoutX="19.0" layoutY="152.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="txtBookName" disable="true" layoutX="19.0" layoutY="212.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="txtIsBookAvailable" alignment="CENTER" disable="true" layoutX="19.0" layoutY="270.0" prefHeight="25.0" prefWidth="250.0" />
+      <Button fx:id="btnUpdate" layoutX="18.0" layoutY="465.0" mnemonicParsing="false" onAction="#UpdateClick" prefHeight="25.0" prefWidth="250.0" text="Issue Book">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="18.0" layoutY="498.0" mnemonicParsing="false" onAction="#DeleteClick" prefHeight="25.0" prefWidth="250.0" text="Delete Book">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="addBtn" layoutX="714.0" layoutY="118.0" mnemonicParsing="false" onAction="#AddClick" prefHeight="25.0" prefWidth="175.0" text="+ Add New Book">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Button fx:id="btnClear" layoutX="18.0" layoutY="532.0" mnemonicParsing="false" onAction="#ClearClick" prefHeight="25.0" prefWidth="250.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label layoutX="19.0" layoutY="339.0" prefHeight="21.0" prefWidth="250.0" text="Member ID :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMemberID" alignment="CENTER" disable="true" layoutX="19.0" layoutY="360.0" prefHeight="25.0" prefWidth="250.0" />
+      <Button fx:id="btnBookRetuened" layoutX="18.0" layoutY="431.0" mnemonicParsing="false" onAction="#ReturnClick" prefHeight="25.0" prefWidth="250.0" text="Book Returned">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <TextField fx:id="txtSearch" layoutX="303.0" layoutY="147.0" prefHeight="25.0" prefWidth="586.0" promptText="Enter Book name or Avalability to search" />
+      <Label fx:id="assistLibrarianBookEmail" layoutX="24.0" layoutY="24.0" prefHeight="21.0" prefWidth="460.0" textFill="#005ba1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="bookComboBox" layoutX="18.0" layoutY="301.0" prefHeight="25.0" prefWidth="250.0" />
+      <ComboBox fx:id="memberComboBox" layoutX="63.0" layoutY="390.0" prefHeight="25.0" prefWidth="205.0" />
+      <Label layoutX="34.0" layoutY="390.0" prefHeight="25.0" prefWidth="25.0" text="M - ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button id="logout_button" fx:id="btnLogout" layoutX="756.0" layoutY="32.0" mnemonicParsing="false" onAction="#LogoutClick" prefHeight="25.0" prefWidth="150.0" text="LogOut" textFill="#da0f0f" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.27450981736183167" green="0.47058823704719543" blue="0.8274509906768799" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="682.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/add_book.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="57.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 1;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@../../../assets/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+   <stylesheets>
+      <URL value="@../../../Style/main.css" />
+      <URL value="@../../../Style/table.css" />
+   </stylesheets>
+</AnchorPane>
